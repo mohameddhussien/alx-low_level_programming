@@ -1,12 +1,11 @@
 #include <stdio.h>
 
 /**
+ * main - Entry function point
  *
- * main - Entry point
+ * Description: print all alphabet letters in lowercase
  *
- * Description: A C program to print alphabet
- *
- * Return: 0 (Success)
+ * Return: Always 0 (Success)
 */
 
 int main(void)
