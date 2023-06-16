@@ -5,9 +5,9 @@
 /**
  * main - Entry point
  *
- * Description: A C program with if conditions to print positive and negative numbers
+ * Description: positive or negative
  *
- * Return 0 (Success)
+ * Return: 0 (Success)
 */
 
 int main(void)
