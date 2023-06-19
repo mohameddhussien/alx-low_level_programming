@@ -20,12 +20,12 @@ int main(void)
 			ch3 = 0;
 			while (ch3 <= 9)
 			{
-				if (ch1 != ch2 && ch2 != ch3 && ch3 != ch1 && ch2 > ch1 && ch3 > ch2 && ch3 > ch1)
+				if (ch1 != ch2 && ch2 != ch3 && ch2 > ch1 && ch3 > ch2 && ch3 > ch1)
 				{
 					putchar(ch1 + '0');
 					putchar(ch2 + '0');
 					putchar(ch3 + '0');
-					if (ch1 + ch2 != 24)
+					if (ch1 + ch2 + ch3 != 24)
 					{
 						putchar(',');
 						putchar(' ');
