@@ -11,7 +11,6 @@ void jack_bauer(void)
 	for (i = 0; i < 3; i++)
 	{
 		if (i < 2)
-		{
 			for (j = 0; j < 10; j++)
 			{
 				for (k = 0; k < 6; k++)
@@ -27,9 +26,7 @@ void jack_bauer(void)
 					}
 				}
 			}
-		}
 		else
-		{
 			for (j = 0; j < 4; j++)
 			{
 				for (k = 0; k < 6; k++)
@@ -45,6 +42,5 @@ void jack_bauer(void)
 					}
 				}
 			}
-		}
 	}
 }
