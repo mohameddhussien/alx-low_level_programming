@@ -3,9 +3,11 @@
 
 /**
  * fizz_buzz - Function to check for multiples of 5 or 3 or both.
+ *
+ * Return: always 0 (success)
  */
 
-void fizz_buzz(void)
+int main(void)
 {
 	int i;
 
@@ -23,4 +25,5 @@ void fizz_buzz(void)
 			putchar(' ');
 	}
 	putchar('\n');
+	return (0);
 }
