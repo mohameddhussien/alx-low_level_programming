@@ -1,16 +1,22 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
+ * main - check the code
  *
- *
- *
+ * Return: Always 0.
  */
-
-int main()
+int main(void)
 {
-	char *ch1 = "Mohamed";
-	char *ch2 = "12345678910";
+	char s1[98] = "Hello ";
+	char s2[] = "World!\n";
+	char *ptr;
 
-	_strcat(ch1, ch2);
-	return 0;
+	printf("%s\n", s1);
+	printf("%s", s2);
+	ptr = _strcat(s1, s2);
+	printf("%s", s1);
+	printf("%s", s2);
+	printf("%s", ptr);
+	return (0);
 }
