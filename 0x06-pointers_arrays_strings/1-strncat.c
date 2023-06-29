@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- * _strcat - Function name.
+ * _strncat - Function name.
  * @dest: para1
  * @src: para2
  * @n: bytes to concat.
