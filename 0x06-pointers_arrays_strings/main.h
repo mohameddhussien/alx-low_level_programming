@@ -11,5 +11,6 @@ char *cap_string(char *);
 int isLower(char c);
 int isDelimit(char c);
 char *leet(char *c);
+char *rot13(char *c);
 
 #endif
