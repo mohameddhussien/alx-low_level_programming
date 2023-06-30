@@ -1,4 +1,31 @@
 #include "main.h"
+/**
+ * isLower - lower.
+ * @c - ch.
+ *
+ * Return: 1, 0.
+ */
+int isLower(char c)
+{
+	return (c >= 97 && c <= 122);
+}
+
+/**
+ * isDelimit - Function name.
+ * @c: param1
+ *
+ * Return: bool 1 0.
+*/
+int isDelimit(char c)
+{
+	int i = 0;
+	char delimit[] = " \t\n,.!?\"(){}";
+
+	for (i = 0; i < 12; i++)
+		if (c == delimit[i])
+			return (1);
+	return (0);
+}
 
 /**
  * cap_string - Function name.
@@ -8,45 +35,20 @@
  */
 char *cap_string(char *s)
 {
-	int i;
+	int found = 1;
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (*s)
 	{
-		if (i == 0)
+		if (isDelimit(*s))
+			found = 1;
+		else if (isLower(*s) && found)
 		{
-			if ((s[i] >= 'a' && s[i] <= 'z'))
-			{
-				s[i] = s[i] - 32;
-			}
-			continue;
+			*s -= 32;
+			found = 0;
 		}
-		if (s[i] == ' ' || s[i] == '.' || s[i] == '\n' || s[i] == ',' || s[i] == ';')
-		{
-			++i;
-			if (s[i] >= 'a' && s[i] <= 'z')
-			{
-				s[i] = s[i] - 32;
-				continue;
-			}
-		}
-		else if (s[i] == '!' || s[i] == '\?' || s[i] == '\"' || s[i] == '(')
-		{
-			++i;
-			if (s[i] >= 'a' && s[i] <= 'z')
-			{
-				s[i] = s[i] - 32;
-				continue;
-			}
-		}
-		else if (s[i] == ')' || s[i] == '{' || s[i] == '}')
-		{
-			++i;
-			if (s[i] >= 'a' && s[i] <= 'z')
-			{
-				s[i] = s[i] - 32;
-				continue;
-			}
-		}
+		else
+			found = 0;
+		s++;
 	}
 	return (s);
 }
