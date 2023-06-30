@@ -6,12 +6,12 @@
  * Return: 1 or 0.
  */
 
-char *leet(char *c);
+char *leet(char *c)
 {
 	char *cp = c;
 	char key[] = {'A', 'E', 'O', 'T', 'L'};
 	int value[] = {4, 3, 0, 7, 1};
-	int i;
+	unsigned int i;
 
 	while (*c)
 	{
