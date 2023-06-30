@@ -35,10 +35,13 @@ int isDelimit(char c)
  */
 char *cap_string(char *s)
 {
+	char *ptr = s;
 	int found = 1;
 
 	while (*s)
 	{
+		if (*s == '\t')
+                        *s = ' ';
 		if (isDelimit(*s))
 			found = 1;
 		else if (isLower(*s) && found)
@@ -50,5 +53,5 @@ char *cap_string(char *s)
 			found = 0;
 		s++;
 	}
-	return (s);
+	return (ptr);
 }
