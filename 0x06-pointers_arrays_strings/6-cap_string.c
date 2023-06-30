@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * isLower - lower.
- * @c - ch.
+ * @c: ch.
  *
  * Return: 1, 0.
  */
