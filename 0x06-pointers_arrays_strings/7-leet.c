@@ -16,8 +16,12 @@ char *leet(char *c);
 	while (*c)
 	{
 		for (i = 0; i < sizeof(key) / sizeof(char); i++)
+		{
 			if (*c == key[i] || *c == 32 + key[i])
+			{
 				*c = '0' + value[i];
+			}
+		}
 		c++;
 	}
 	return (cp);
