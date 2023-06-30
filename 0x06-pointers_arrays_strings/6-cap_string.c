@@ -40,8 +40,6 @@ char *cap_string(char *s)
 
 	while (*s)
 	{
-		if (*s == '\t')
-                        *s = ' ';
 		if (isDelimit(*s))
 			found = 1;
 		else if (isLower(*s) && found)
