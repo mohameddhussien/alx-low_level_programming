@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _memset - Function name.
+ * _memcpy - Function name.
  * @dest: para1
  * @src: para2
  * @n: para3
