@@ -19,7 +19,7 @@ char *_strchr(char *s, char c)
 			s += i;
 			break;
 		}
-		i++;	
+		i++;
 	}
 	return (s);
 }
