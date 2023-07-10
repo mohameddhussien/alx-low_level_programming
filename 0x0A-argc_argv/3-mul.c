@@ -15,8 +15,7 @@ int main(int argc, char **argv)
 {
 	int i = 1, prod = 1, error = 0;
 
-	(void)argc;
-	while (i < 3)
+	while (i < argc)
 	{
 		if (argv[i] != '\0')
 			prod *= atoi(argv[i]);
@@ -27,6 +26,6 @@ int main(int argc, char **argv)
 	if (error != 0)
 		printf("Error\n");
 	else
-		printf("%d\n", prod);
+		printf("%i\n", prod);
 	return (0);
 }
