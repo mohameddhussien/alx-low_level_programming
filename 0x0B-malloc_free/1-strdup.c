@@ -35,7 +35,7 @@ char *_strdup(char *str)
 	size = _strlen(str);
 	ptr = (char *) malloc(size * sizeof(char) + 1);
 	if (ptr == NULL)
-		return NULL;
+		return (NULL);
 	for (j = 0; j < size; j++)
 		if (str[j] != '\0')
 			ptr[j] = str[j];
