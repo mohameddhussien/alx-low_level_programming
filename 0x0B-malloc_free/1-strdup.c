@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * _strlen - Function name.
@@ -30,7 +31,10 @@ char *_strdup(char *str)
 	char *ptr = (char *) malloc(size * sizeof(char));
 
 	if (str == NULL)
+	{
+		printf("failed to allocate memory");
 		return (NULL);
+	}
 	for (j = 0; j < size; j++)
 		if (str[j] != '\0')
 			ptr[j] = str[j];
