@@ -30,7 +30,7 @@ char *_strdup(char *str)
 	char *ptr = (char *) malloc(size * sizeof(char));
 
 	if (str == NULL)
-                return (NULL);
+		return (NULL);
 	for (j = 0; j < size; j++)
 		if (str[j] != '\0')
 			ptr[j] = str[j];
