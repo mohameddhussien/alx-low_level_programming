@@ -27,14 +27,13 @@ int _strlen(char *str)
 
 char *_strdup(char *str)
 {
-	int j = 0, size = _strlen(str);
-	char *ptr = (char *) malloc(size * sizeof(char) + 1);
+	int j = 0, size;
+	char *ptr;
 
 	if (str == NULL)
-	{
-		printf("failed to allocate memory");
 		return (NULL);
-	}
+	size = _strlen(str);
+	ptr = (char *) malloc(size * sizeof(char) + 1);
 	for (j = 0; j < size; j++)
 		if (str[j] != '\0')
 			ptr[j] = str[j];
