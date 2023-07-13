@@ -5,6 +5,7 @@
  * malloc_checked - xxxx.
  * @b: xxxx
  *
+ * Return: xxx
  */
 
 void *malloc_checked(unsigned int b)
