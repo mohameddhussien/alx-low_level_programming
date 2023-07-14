@@ -18,6 +18,19 @@ unsigned int _strlen(char *str)
 }
 
 /**
+ * _checkstr - Function name.
+ * @s: para1
+ * Return: int
+ */
+int _checkstr(char *s)
+{
+	if (s == NULL)
+		return (0);
+	else
+		return (_strlen(s));
+}
+
+/**
  * string_nconcat - xxxx.
  * @s1: xxxx
  * @s2: xxxx
@@ -31,26 +44,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int i = 0, size_1, size_2;
 	char *ptr;
 
-	if (s1 == NULL && s2 != NULL)
-	{
-		size_1 = 0;
-		size_2 = _strlen(s2);
-	}
-	else if (s1 != NULL && s2 == NULL)
-	{
-		size_2 = 0;
-		size_1 = _strlen(s1);
-	}
-	else if (s1 != NULL && s2 != NULL)
-	{
-		size_1 = _strlen(s1);
-		size_2 = _strlen(s2);
-	}
-	else
-	{
-		size_1 = _strlen(s1);
-		size_2 = _strlen(s2);
-        }
+	size_1 = _checkstr(s1);
+	size_2 = _checkstr(s2);
 	if (n >= size_2)
 	{
 		ptr = malloc((sizeof(char) * (size_1 + size_2)) + 1);
