@@ -3,14 +3,15 @@
 
 /**
  * _calloc - Function name.
- * @str: para1.
+ * @nmemb: para1.
+ * @size: para2.
  *
- * Return: length of str.
+ * Return: void.
  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	char *ptr;
+	void *ptr;
 
 	if (!nmemb || !size)
 		return (NULL);
