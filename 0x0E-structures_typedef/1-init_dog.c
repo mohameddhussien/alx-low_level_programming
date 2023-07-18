@@ -1,8 +1,11 @@
 #include "dog.h"
 
 /**
- *
- *
+ * init_dog - Initialize Dog struct.
+ * @d: struct obj.
+ * @name: new name.
+ * @age: new age.
+ * @owner: new owner.
  *
  */
 
