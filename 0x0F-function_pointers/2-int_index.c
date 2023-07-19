@@ -6,6 +6,7 @@
  * @size: size of array.
  * @cmp: print in digit or hexadecimal
  *
+ * Return: integar index.
  */
 
 int int_index(int *array, int size, int (*cmp)(int))
