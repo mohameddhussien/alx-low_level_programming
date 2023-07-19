@@ -1,9 +1,10 @@
 #include "function_pointers.h"
 
 /**
- * print_name - Function name.
- * @name: name to print.
- * @f: uppercase or as it is.
+ * array_iterator - Function name.
+ * @array: array of numbers..
+ * @size: size of array.
+ * @action: print in digit or hexadecimal
  *
  */
 
